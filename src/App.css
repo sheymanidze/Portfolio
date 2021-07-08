@@ -56,9 +56,13 @@ nav ul li {
   border-top: 0.18rem solid var(--primary-yellow);
 }
 
+/*hamburger menu*/
 .navbar-collapse {
   flex-grow: 0 !important;
   justify-content: end;
+}
+.navbar-toggler {
+  margin-top: 1.4rem;
 }
 
 /***Header***/
@@ -94,6 +98,7 @@ nav ul li {
 .typed-text {
   font-size: 2rem;
   color: var(--primary-white);
+  margin-top: 1rem;
 }
 
 /*button*/
@@ -148,6 +153,10 @@ nav ul li {
 
   .logo {
     width: 15rem;
+  }
+
+  .navbar-toggler {
+    margin-top: 1rem;
   }
 
 }

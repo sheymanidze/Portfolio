@@ -13,7 +13,7 @@ body {
 }
 
 
-/***Navbar***/
+/*****Navbar Section*****/
 
 nav {
   z-index:2;
@@ -65,7 +65,7 @@ nav ul li {
   margin-top: 1.4rem;
 }
 
-/***Header***/
+/*****Header Section*****/
 
 .header-wraper{
   position: relative;
@@ -126,6 +126,13 @@ nav ul li {
   width: 100vw;
   z-index: 1;
 }
+
+/******About Me Section*****/
+
+
+
+
+/*****Media Section*****/
 
 @media (max-width: 991px) {
   .navbar-nav > li > a {

@@ -10,7 +10,11 @@ const Header = () => {
       <h1>full stack wed developer</h1>
       <Typed
       classNmae="typed-text"
-      strings={["Web Design", "Full Stauck Web Development", "Marketing"]}/>
+      strings={["Full Stack Web Development", "Web Design", "Marketing"]}
+      typeSpeed={40}
+      backSpeed={60}
+      loop
+      />
       </div>
       
     </div>

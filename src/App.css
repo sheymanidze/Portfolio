@@ -2,6 +2,8 @@
 
 :root {
   --primary-white: #fff;
+  --primary-yellow: #fdd51b;
+  --primary-dark: rgba(255, 255, 255, 0);
 }
 
 body {
@@ -12,12 +14,15 @@ body {
 
 .navbar-brand {
   color: var(--primary-white) !important;
+  text-transform: uppercase;
 }
 
 /*Links*/
 nav a.nav-link {
+  font-size: 0.8rem;
   letter-spacing: 0.6px;
   cursor: pointer;
+  border-top: 0.18rem solid var(--primary-dark);
 }
 
 nav ul li {
@@ -28,4 +33,13 @@ nav ul li {
   color: var(--primary-white) !important;
   margin-left: 0.75rem;
   margin-right: 0.75rem;
+}
+
+.navabar-nav > li > a.active, .navbar-nav > li > a.active:focus {
+  border-top: 0.18rem solid var(--primary-yellow);
+   
+}
+
+.navbar-nav >li > a:hover {
+  border-top: 0.18rem solid var(--primary-yellow);
 }

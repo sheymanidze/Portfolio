@@ -4,11 +4,14 @@
   --primary-white: #fff;
   --primary-yellow: #fdd51b;
   --primary-dark: rgba(255, 255, 255, 0);
+  --primary-red: #ef4035;
+  --primary-hover-red: #f33501;
 }
 
 body {
   font-family: "Roboto Condensed", san-serif;
 }
+
 
 /***Navbar***/
 
@@ -17,9 +20,14 @@ body {
   text-transform: uppercase;
 }
 
+/*Logo*/
+.logo{
+  width: 23.5rem;
+}
+
 /*Links*/
 nav a.nav-link {
-  font-size: 0.8rem;
+  font-size: 0.75rem;
   letter-spacing: 0.6px;
   cursor: pointer;
   border-top: 0.18rem solid var(--primary-dark);
@@ -33,6 +41,7 @@ nav ul li {
   color: var(--primary-white) !important;
   margin-left: 0.75rem;
   margin-right: 0.75rem;
+  margin-top: 1.5rem;
 }
 
 .navabar-nav > li > a.active, .navbar-nav > li > a.active:focus {
@@ -48,7 +57,7 @@ nav ul li {
 
 .header-wraper{
   position: relative;
-  background: url(background.jpeg) no-repeat;
+  background: url(background.png) no-repeat;
   background-size: cover;
   background-position: center;
   height: 90vh;
@@ -56,6 +65,11 @@ nav ul li {
 
 .main-info {
   display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -71,4 +85,16 @@ nav ul li {
 .typed-text {
   font-size: 2rem;
   color: var(--primary-white);
+}
+
+
+/*button*/
+.btn-main{
+  border: 1px solid var(--primary-red);
+  text-transform: uppercase;
+  border-radius: 0;
+  padding: 0.3rem 0.4rem 0.4rem 0.4rem;
+  color: var(--primary-white);
+  text-decoration: none;
+  margin: 2rem;
 }

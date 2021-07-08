@@ -128,3 +128,26 @@ nav ul li {
     margin-top:0.2rem;
   }
 }
+
+@media (max-width: 768px) {
+  .particles {
+    display: none;
+  }
+
+  .main-info h1 {
+    font-size: 1.7rem !important;
+  }
+
+  .typed-text {
+    font-size: 1.3rem !important;
+  }
+
+  .navbar-brand {
+    width: 7rem;
+  }
+
+  .logo {
+    width: 15rem;
+  }
+
+}

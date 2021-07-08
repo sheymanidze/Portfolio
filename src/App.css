@@ -6,6 +6,7 @@
   --primary-dark: rgba(255, 255, 255, 0);
   --primary-red: #ef4035;
   --primary-hover-red: #f33501;
+  --primary-light-grey: rgb(180, 180, 180);
 }
 
 body {
@@ -146,7 +147,24 @@ nav ul li {
   font-weight: bold;
 }
 
+/*****Portfolio Section*****/
 
+.portfolio-wrapper {
+  background: var(--primary-light-grey);
+  padding: 3rem 0;
+}
+
+.portfolio-image {
+  width: 15rem;
+  border: 1px solid var(--primary-yellow);
+  padding: 0 0.5rem;
+}
+
+.portfolio-image-box {
+  position:relative;
+  margin: 1rem;
+
+}
 
 
 /*****Media Section*****/

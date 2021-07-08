@@ -7,7 +7,7 @@
 }
 
 body {
-  font-family: "Roboto Condensed" san-serif;
+  font-family: "Roboto Condensed", san-serif;
 }
 
 /***Navbar***/
@@ -43,3 +43,28 @@ nav ul li {
 .navbar-nav >li > a:hover {
   border-top: 0.18rem solid var(--primary-yellow);
 }
+
+/***Header***/
+
+.header-wraper{
+  position: relative;
+  background: url(background.jpeg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+}
+
+.main-info {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  align-items: center !important;
+  text-align: center !important;
+  font-family: "Roboto Condensed", san-serif;
+}
+
+.main-info h1 {
+  color: var(--primary-yellow) !important;
+  text-transform: uppercase;
+}
+/*Typed text*/

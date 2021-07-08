@@ -9,7 +9,7 @@ const Header = () => {
       <div className="main-info">
       <h1>full stack wed developer</h1>
       <Typed
-      classNmae="typed-text"
+      className="typed-text"
       strings={["Full Stack Web Development", "Web Design", "Marketing"]}
       typeSpeed={40}
       backSpeed={60}

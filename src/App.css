@@ -106,3 +106,9 @@ nav ul li {
   width: 100vw;
   z-index: 1;
 }
+
+@media (max-width: 991px) {
+  .navbar-nav > li > a {
+    margin-left: 2.75rem;
+  }
+}

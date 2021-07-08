@@ -15,6 +15,9 @@ body {
 
 /***Navbar***/
 
+nav {
+  z-index:2;
+}
 .navbar-brand {
   color: var(--primary-white) !important;
   text-transform: uppercase;
@@ -53,6 +56,11 @@ nav ul li {
   border-top: 0.18rem solid var(--primary-yellow);
 }
 
+.navbar-collapse {
+  flex-grow: 0 !important;
+  justify-content: end;
+}
+
 /***Header***/
 
 .header-wraper{
@@ -60,7 +68,7 @@ nav ul li {
   background: url(background.png) no-repeat;
   background-size: cover;
   background-position: center;
-  height: 90vh;
+  height: 80vh;
 }
 
 .main-info {
@@ -75,6 +83,7 @@ nav ul li {
   align-items: center;
   text-align: center;
   font-family: "Roboto Condensed", san-serif;
+  z-index: 1;
 }
 
 .main-info h1 {
@@ -87,7 +96,6 @@ nav ul li {
   color: var(--primary-white);
 }
 
-
 /*button*/
 .btn-main{
   border: 1px solid var(--primary-red);
@@ -97,6 +105,13 @@ nav ul li {
   color: var(--primary-white);
   text-decoration: none;
   margin: 2rem;
+}
+
+.btn-main:hover {
+  text-decoration: none;
+  background-color: var(--primary-hover-red);
+  color:var(--primary-white);
+  transition: .2s ease-in-out;
 }
 
 /*Particles js*/
@@ -110,5 +125,6 @@ nav ul li {
 @media (max-width: 991px) {
   .navbar-nav > li > a {
     margin-left: 2.75rem;
+    margin-top:0.2rem;
   }
 }

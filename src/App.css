@@ -226,8 +226,31 @@ nav ul li {
   outline: 0 !important;
   box-shadow: none;
   top: 0;
+  margin-bottom: 1rem;
+  padding-left: 0 !important;
 }
 
+.contactMe .container {
+  padding: 4rem 0;
+}
+
+.contactMe input:focus, .contactMe textarea:focus {
+  background: transparent;
+  color: var(--primary-yellow);
+  border-bottom: 2px solid var(--primary-light-grey);
+  outline: none !important;
+  box-shadow: none;
+}
+
+.contactMe textarea {
+  height: 9.15rem !important;
+}
+
+.contactMe button {
+  margin: 1rem 0 0 0;
+  width: 100%;
+  background: none;
+}
 
 
 

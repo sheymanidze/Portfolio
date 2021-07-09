@@ -10,19 +10,19 @@ const ContactMe = () => {
       <div className="container">
         <div className="row">
           <div className="col-md-6 col-xs-12">
-            <input id="name"
+            <input 
              type="text"
              className="form-control"
              placeholder="Name"
              name="name"
             />
-            <input id="phone"
+            <input 
               type="text"
              className="form-control"
              placeholder="Phone Number"
              phone="phone"
             />
-            <input id="email"
+            <input 
              type="email"
              className="form-control"
              placeholder="Email"
@@ -30,7 +30,7 @@ const ContactMe = () => {
             />
           </div>
           <div className="col-md-6 col-xs-12">
-           <textarea id="description"
+           <textarea
              type="text"
              className="form-control"
              placeholder="Description"

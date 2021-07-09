@@ -312,10 +312,9 @@ input .form-control {
   color: var(--primary-yellow);
 }
 
-.emailFooter {
-  padding-top: 1rem;
+.col {
+  padding: 0 !important;
 }
-
 
 
 

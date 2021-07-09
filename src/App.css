@@ -173,7 +173,30 @@ nav ul li {
   width: 100% !important;
   height: 360px;
   object-fit: cover;
+  border-radius: 0.5rem; 
 }
+
+.carousel h3 {
+  color:var(--primary-dark);
+  font-weight: 600;
+  margin-top: 2%;
+  
+}
+
+.carousel a {
+  text-decoration: none;
+}
+
+.carousel-root{
+  border: 0.15rem solid var(--primary-yellow);
+  border-radius: 0.5rem;
+  box-shadow: inset 0px 0px 10px var(--primary-dark-grey), 0 0 15px var(--primary-dark);
+  cursor: pointer;
+}
+
+
+
+
 
 
 

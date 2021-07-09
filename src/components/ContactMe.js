@@ -11,36 +11,44 @@ const ContactMe = () => {
         <div className="row">
           <div className="col-md-6 col-xs-12">
             <div className="line"></div>
-            <input 
-             type="text"
-             className="form-control"
-             placeholder="Name"
-             name="name"
-            />
-            <div className="line"></div>
-            <input 
-              type="text"
-             className="form-control"
-             placeholder="Phone Number"
-             phone="phone"
-            />
-            <div className="line"></div>
-            <input 
-             type="email"
-             className="form-control"
-             placeholder="Email"
-             email="email"
-            />
-            <div className="line"></div>
+            <div className="text-center">
+             <input 
+               type="text"
+               className="form-control"
+               placeholder="Name"
+               name="name"
+             />
+             <div className="line"></div>
+            </div>
+            <div className="text-center">
+             <input 
+               type="text"
+               className="form-control"
+               placeholder="Phone Number"
+               name="phone"
+             />
+             <div className="line"></div>
+            </div>
+            <div className="text-center">
+             <input 
+               type="email"
+               className="form-control"
+               placeholder="Email"
+               name="email"
+             />
+             <div className="line"></div>
+            </div>
+            <div className="text-center"></div>
           </div>
           <div className="col-md-6 col-xs-12">
            <textarea
              type="text"
              className="form-control"
              placeholder="Description"
-             description="description"
+             name="description"
             ></textarea>
-            <div className="line"></div>
+             <div className="line"></div>
+             <div className="text-center"></div>
             <button className="btn-main contact-btn" type="submit">contact me</button>
           </div>
         </div>

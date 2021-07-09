@@ -283,6 +283,42 @@ input .form-control {
 }
 
 
+/*****Footer Section*****/
+
+.footer {
+  background: black;
+  color: var(--primary-dark-grey);
+  padding-top: 2rem;
+  position: relative;
+  background: url(footer.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+  
+}
+
+.footer a {
+  text-decoration: none;
+  color: var(--primary-light-grey);
+}
+
+.footer a:hover {
+  text-decoration: none;
+  color: var(--primary-yellow);
+  cursor: pointer;
+}
+
+.copyRights {
+  margin-top: 2rem !important;
+  color: var(--primary-yellow);
+}
+
+.emailFooter {
+  padding-top: 1rem;
+}
+
+
+
+
 /*****Media Section*****/
 
 @media (max-width: 991px) {

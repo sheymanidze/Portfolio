@@ -6,15 +6,18 @@ const Footer = () => {
     <div className="footer">
       <div className="container">
         <div className="row">
-          <div className="col-lg-4 col-md-6 col-sm-6">
+          <div className="col-lg-3 col-md-6 col-sm-6">
             <div className="d-flex">
             <a href="https://github.com/sheymanidze?tab=repositories" target="_blank">Github</a>
             </div>
             <div className="d-flex">
-              <p>sorkin.anastasia@gmail.com</p>
+              <div className="emailFooter">
+               <a href="mailto:sorkin.anastasia@gmail.com">sorkin.anastasia@gmail.com</a>
+            </div>
+              
             </div>
           </div>
-          <div className="col-lg-3 col-md-2 col-sm-6">
+          <div className="webSections col-lg-3 col-md-2 col-sm-6">
             <div className="row">
               <div className="col">
                 <a className="footer-nav">Home</a>
@@ -30,10 +33,10 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          <div className="col-lg-5 col-md-5 col-sm-6 align-items-center">
+          <div className="copyRights align-items-center">
             <p className="pt-3 text-center">
               Copyright&copy;
-              {new Date().getFullYear()}&nbsp;Anastasia Sorkin | All Rights Reserved
+              {new Date().getFullYear()}&nbsp;Anastasia Sorkin | Full Stack Developer
             </p>
           </div>
         </div>

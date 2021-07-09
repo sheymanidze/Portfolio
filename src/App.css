@@ -316,6 +316,11 @@ input .form-control {
   padding: 0 !important;
 }
 
+.mx-3 {
+  border-radius: 5px;
+  border: 2px solid var(--primary-yellow);
+}
+
 
 
 /*****Media Section*****/

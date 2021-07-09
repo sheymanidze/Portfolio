@@ -243,7 +243,7 @@ nav ul li {
 }
 
 .contactMe textarea {
-  height: 9.15rem !important;
+  height: 13.65rem !important;
 }
 
 .contactMe button {
@@ -252,6 +252,23 @@ nav ul li {
   background: none;
 }
 
+.line{
+  position: relative;
+  top: -2.05rem;
+  width: 0;
+  height: 2px;
+  background: var(--primary-yellow);
+  display: inline-block;
+}
+
+input:focus+.line, textarea:focus+.line {
+  width: 100%;
+  transition: width 0.5s ease-in-out;
+}
+
+input .form-control {
+  margin: -0.3rem 0 !important;
+}
 
 /*****Media Section*****/
 

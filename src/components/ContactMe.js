@@ -10,24 +10,28 @@ const ContactMe = () => {
       <div className="container">
         <div className="row">
           <div className="col-md-6 col-xs-12">
+            <div className="line"></div>
             <input 
              type="text"
              className="form-control"
              placeholder="Name"
              name="name"
             />
+            <div className="line"></div>
             <input 
               type="text"
              className="form-control"
              placeholder="Phone Number"
              phone="phone"
             />
+            <div className="line"></div>
             <input 
              type="email"
              className="form-control"
              placeholder="Email"
              email="email"
             />
+            <div className="line"></div>
           </div>
           <div className="col-md-6 col-xs-12">
            <textarea
@@ -36,6 +40,7 @@ const ContactMe = () => {
              placeholder="Description"
              description="description"
             ></textarea>
+            <div className="line"></div>
             <button className="btn-main contact-btn" type="submit">contact me</button>
           </div>
         </div>

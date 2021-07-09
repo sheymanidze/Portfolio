@@ -23,6 +23,7 @@ const PortfolioCarousel = () => {
    <Carousel>
      <>
        <img className="portfolio-image" src={quack} alt="Budget Trackers"/>
+       
      </>
      <>
        <img className="portfolio-image" src={surfing} alt="Plan Surfing"/>

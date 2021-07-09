@@ -51,7 +51,7 @@ nav ul li {
   margin-top: 1.5rem;
 }
 
-.navabar-nav > li > a.active, .navbar-nav > li > a.active:focus {
+.navabar-nav > li > a.active, .navbar-nav > li > a:focus {
   border-top: 0.18rem solid var(--primary-yellow);
    
 }

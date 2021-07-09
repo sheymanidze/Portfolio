@@ -15,11 +15,6 @@ const Footer = () => {
     <div className="footer">
       <div className="container">
         <div className="row">
-          <div className="col-lg-3 col-md-6 col-sm-6">
-            <div className="d-flex">
-            <a href="https://github.com/sheymanidze?tab=repositories" target="_blank">Github</a>
-            </div>
-          </div>
           <div className="webSections col-lg-4 col-md-2 col-sm-6">
             <div className="row">
               <div className="col">

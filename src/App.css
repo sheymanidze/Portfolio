@@ -8,6 +8,7 @@
   --primary-hover-red: #f33501;
   --primary-light-grey: #f4f4f4;
   --primary-dark-grey: #666666;
+  --primary-green: rgb(16, 170, 16);
   
 }
 
@@ -243,7 +244,7 @@ nav ul li {
 }
 
 .contactMe textarea {
-  height: 18.53rem !important;
+  height: 17rem !important;
 }
 
 .contactMe button {
@@ -254,7 +255,7 @@ nav ul li {
 
 .line{
   position: relative;
-  top: -2.05rem;
+  top: -2.1rem;
   width: 0;
   height: 2px;
   background: var(--primary-yellow);
@@ -268,6 +269,17 @@ input:focus+.line, textarea:focus+.line {
 
 input .form-control {
   margin: -0.3rem 0 !important;
+}
+
+.error-message {
+  color: var(--primary-white);
+  background: var(--primary-red);
+  text-align: left;
+}
+
+.success-message {
+  
+  color: var(--primary-green);
 }
 
 

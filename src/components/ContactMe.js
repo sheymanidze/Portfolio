@@ -56,7 +56,7 @@ const ContactMe = () => {
                 message: "Please enter your name",
                 maxLength: {
                   value: 20,
-                  message: "Please enter the name with fewer than 20 characters"
+                  message: "Please enter the name with fewer than 20 characters..."
                  }
               })}
              />
@@ -71,7 +71,7 @@ const ContactMe = () => {
                name="phone"
                {...register("phone", {
                 required: "Required",
-                message: "Please enter your phone number"
+                message: "Please enter your phone number..."
               })}
              />
              <div className="line"></div>
@@ -88,7 +88,7 @@ const ContactMe = () => {
                 message: "Please enter your email",
                 pattern: {
                   value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
-                  message: "invalid Email"
+                  message: "Invalid Email"
                 }
               })}
              />
@@ -115,6 +115,7 @@ const ContactMe = () => {
 
           </div>
           <div className="col-md-6 col-xs-12">
+          <div className="text-center">
            <textarea
              type="text"
              className="form-control"
@@ -127,6 +128,7 @@ const ContactMe = () => {
 
             ></textarea>
              <div className="line"></div>
+             </div>
              {/* <span className="error-message">
                 {errors.description && errors.description.message}
               </span> */}

@@ -36,7 +36,7 @@ const ContactMe = () => {
              placeholder="Description"
              description="description"
             ></textarea>
-            <button className="btn-main-offer contact-btn" type="submit">contact me</button>
+            <button className="btn-main contact-btn" type="submit">contact me</button>
           </div>
         </div>
       </div>

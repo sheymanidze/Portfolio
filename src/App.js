@@ -5,6 +5,7 @@ import Header from './components/Header';
 import Particles from "react-particles-js";
 import AboutMe from "./components/AboutMe";
 import Portfolio from "./components/Portfolio";
+import ContactMe from "./components/ContactMe";
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
      <Header/>
      <AboutMe/>
      <Portfolio/>
+     <ContactMe/>
    </>
   );
 }

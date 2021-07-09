@@ -44,7 +44,7 @@ const PortfolioCarousel = () => {
         </a>
      </>
      <>
-       <a href="https://git.heroku.com/budget-trackers-online-offline.git" target=" _blank">
+       <a href="https://budget-trackers-online-offline.herokuapp.com/" target=" _blank">
          <img className="portfolio-image" src={budget} alt="Budget Trackers"/>
          <div className="myCarousel">
            <h3>Budget Trackers: CSS,HTML, JavaScript, Node, Express, Mongo, Mongoose, Heroku</h3>

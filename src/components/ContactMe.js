@@ -3,6 +3,7 @@ import emailjs from "emailjs-com";
 import {useForm} from "react-hook-form";
 import { ErrorMessage } from '@hookform/error-message';
 
+
 const ContactMe = () => {
 // send an email when click contact me button from contact me section
  const [successMessage, setSuccessMessage]= useState("");
@@ -52,32 +53,17 @@ const ContactMe = () => {
                className="form-control"
                placeholder="Name"
                name="name"
-              //  ref={
-              //   register({
-              //     required: "Please enter your name",
-              //     maxLength: {
-              //       value: 20,
-              //       message: "Please enter a name with fewer than 20 characters"
-              //     }
-              //   })
-              // }
                {...register("name", {
-                required: "Please enter your name...",
+                required:"PLease enter name...",
                 maxLength: {
                   value: 20,
                   message: "Please enter the name with fewer than 20 characters..."
-                 },
-                 validate: name => name
+                 }
               })}
              />
-             {/* <ErrorMessage errors={errors} name="singleErrorInput"/> */}
+             <ErrorMessage errors={errors} name="name"/>
              <div className="line"></div>
             </div>
-            {/* <ErrorMessage
-              errors={errors}
-              name="singleErrorInput"
-              render={({ errors }) => <span className="error-message">{errors}</span>}
-            /> */}
             <span className="error-message">{errors.name && errors.name.message}</span>
             <div className="text-center">
              <input 
@@ -87,9 +73,9 @@ const ContactMe = () => {
                name="phone"
                {...register("phone", {
                 required: "Please enter your phone number...",
-                validate: phone => phone
               })}
              />
+              <ErrorMessage errors={errors} name="phone"/>
              <div className="line"></div>
              </div>
              <span className="error-message">{errors.phone && errors.phone.message}</span>
@@ -104,17 +90,10 @@ const ContactMe = () => {
                 pattern: {
                   value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
                   message: "Invalid Email"
-                },
-                // onChange: {(e) => {
-                //     setError("email", {
-                //       type: "manual",
-                //       message: "Dont Forget Your Username Should Be Cool!",
-                //     })
-                //   }
-                // },
-                validate: email => email
+                }
               })}
              />
+              <ErrorMessage errors={errors} name="email"/>
              <div className="line"></div>
             </div>
             <span className="error-message">{errors.email && errors.email.message}</span>
@@ -127,9 +106,9 @@ const ContactMe = () => {
                name="subject"
                {...register("subject", {
                 required: "OOPS, you forget to add the subject...",
-                validate: subject => subject
               })}
              />
+              <ErrorMessage errors={errors} name="subject"/>
              <div className="line"></div>
             </div>
             <span className="error-message">
@@ -146,11 +125,10 @@ const ContactMe = () => {
                name="description"
                {...register("description", {
                required: "Please describe shortly what it is regarding for...",
-               validate: description => description
               })}
 
               ></textarea>
-              
+               <ErrorMessage errors={errors} name="description"/>
              <div className="line"></div>
             </div>
             <span className="error-message">{errors.description && errors.description.message}</span>

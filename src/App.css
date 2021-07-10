@@ -148,6 +148,7 @@ nav ul li {
   color: var(--primary-yellow);
   text-transform: uppercase;
   font-weight: bold;
+  padding-bottom: 1rem;
 }
 
 /*****Portfolio Section*****/
@@ -255,7 +256,7 @@ nav ul li {
 
 .line{
   position: relative;
-  top: -2.1rem;
+  top: -2.05rem;
   width: 0;
   height: 2px;
   background: var(--primary-yellow);

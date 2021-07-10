@@ -1,11 +1,12 @@
 import React, {useState} from "react";
 import emailjs from "emailjs-com";
 import {useForm} from "react-hook-form";
+import { ErrorMessage } from '@hookform/error-message';
 
 const ContactMe = () => {
 // send an email when click contact me button from contact me section
  const [successMessage, setSuccessMessage]= useState("");
- const{register, handleSubmit, errors}= useForm();
+ const{register, handleSubmit, setErrors, formState: { errors }}= useForm();
 
   const serviceId="service_ID";
   const templateId="template_profile_contact";
@@ -51,18 +52,34 @@ const ContactMe = () => {
                className="form-control"
                placeholder="Name"
                name="name"
-               {...register("name", {
+              //  ref={
+              //   register({
+              //     required: "Please enter your name",
+              //     maxLength: {
+              //       value: 20,
+              //       message: "Please enter a name with fewer than 20 characters"
+              //     }
+              //   })
+              // }
+               {...register("singleErrorInput", {
                 required: "Required",
                 message: "Please enter your name",
                 maxLength: {
                   value: 20,
                   message: "Please enter the name with fewer than 20 characters..."
-                 }
+                 },
+                 validate: name => name
               })}
              />
+             {/* <ErrorMessage errors={errors} name="singleErrorInput"/> */}
              <div className="line"></div>
             </div>
-            {/* <span className="error-message">{errors.name && errors.name.messgae}</span> */}
+            {/* <ErrorMessage
+              errors={errors}
+              name="singleErrorInput"
+              render={({ errors }) => <span className="error-message">{errors}</span>}
+            /> */}
+            <span className="error-message">{errors.name && errors.name.message}</span>
             <div className="text-center">
              <input 
                type="text"
@@ -71,11 +88,12 @@ const ContactMe = () => {
                name="phone"
                {...register("phone", {
                 required: "Required",
-                message: "Please enter your phone number..."
+                message: "Please enter your phone number...",
+                validate: phone => phone
               })}
              />
              <div className="line"></div>
-             {/* <span className="error-message">{errors.phone && errors.phone.messgae}</span> */}
+             <span className="error-message">{errors.phone && errors.phone.message}</span>
             </div>
             <div className="text-center">
              <input 
@@ -89,12 +107,20 @@ const ContactMe = () => {
                 pattern: {
                   value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
                   message: "Invalid Email"
-                }
+                },
+                // onChange: {(e) => {
+                //     setError("email", {
+                //       type: "manual",
+                //       message: "Dont Forget Your Username Should Be Cool!",
+                //     })
+                //   }
+                // },
+                validate: email => email
               })}
              />
              <div className="line"></div>
             </div>
-            {/* <span className="error-message">{errors.email && errors.email.messgae}</span> */}
+            <span className="error-message">{errors.email && errors.email.message}</span>
 
             <div className="text-center">
              <input 
@@ -104,14 +130,15 @@ const ContactMe = () => {
                name="subject"
                {...register("subject", {
                 required: "Required",
-                message: "OOPS, you forget to add the subject..."
+                message: "OOPS, you forget to add the subject...",
+                validate: subject => subject
               })}
              />
              <div className="line"></div>
             </div>
-            {/* <span className="error-message">
+            <span className="error-message">
                 {errors.subject && errors.subject.message}
-              </span> */}
+              </span>
 
           </div>
           <div className="col-md-6 col-xs-12">
@@ -123,15 +150,16 @@ const ContactMe = () => {
              name="description"
              {...register("description", {
               required: "Required",
-              message: "Please describe shortly what is regarding for..."
+              message: "Please describe shortly what is regarding for...",
+              validate: description => description
             })}
 
             ></textarea>
              <div className="line"></div>
              </div>
-             {/* <span className="error-message">
+             <span className="error-message">
                 {errors.description && errors.description.message}
-              </span> */}
+              </span>
             <button className="btn-main contact-btn" type="submit">contact me</button>
           </div>
         </div>

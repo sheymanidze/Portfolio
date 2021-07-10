@@ -309,7 +309,6 @@ input .form-control {
 }
 
 .copyRights {
-  margin-top: 2rem !important;
   color: var(--primary-yellow);
 }
 
@@ -391,6 +390,25 @@ input .form-control {
  .contactMe p {
    padding: 0 1rem;
  }
+
+ /*Footer*/
+
+ .col-lg-2 {
+  margin-left: 0 !important;
+  
+}
+
+.col-md-auto {
+ padding-left: 0 !important;
+}
+
+.col-lg-2, .col-md-auto, .col {
+  text-align: center !important;
+}
+
+.icons {
+  margin-bottom: 2rem !important;
+}
 
 }
 

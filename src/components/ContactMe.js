@@ -91,8 +91,8 @@ const ContactMe = () => {
               })}
              />
              <div className="line"></div>
+             </div>
              <span className="error-message">{errors.phone && errors.phone.message}</span>
-            </div>
             <div className="text-center">
              <input 
                type="email"
@@ -138,23 +138,22 @@ const ContactMe = () => {
 
           </div>
           <div className="col-md-6 col-xs-12">
-          <div className="text-center">
-           <textarea
-             type="text"
-             className="form-control"
-             placeholder="Description"
-             name="description"
-             {...register("description", {
-              required: "Please describe shortly what it is regarding for...",
-              validate: description => description
-            })}
+           <div className="text-center">
+             <textarea
+               type="text"
+               className="form-control"
+               placeholder="Description"
+               name="description"
+               {...register("description", {
+               required: "Please describe shortly what it is regarding for...",
+               validate: description => description
+              })}
 
-            ></textarea>
+              ></textarea>
+              
              <div className="line"></div>
-             </div>
-             <span className="error-message">
-                {errors.description && errors.description.message}
-              </span>
+            </div>
+            <span className="error-message">{errors.description && errors.description.message}</span>
             <button className="btn-main contact-btn" type="submit">contact me</button>
           </div>
         </div>

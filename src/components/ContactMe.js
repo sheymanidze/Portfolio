@@ -61,9 +61,8 @@ const ContactMe = () => {
               //     }
               //   })
               // }
-               {...register("singleErrorInput", {
-                required: "Required",
-                message: "Please enter your name",
+               {...register("name", {
+                required: "Please enter your name...",
                 maxLength: {
                   value: 20,
                   message: "Please enter the name with fewer than 20 characters..."
@@ -87,8 +86,7 @@ const ContactMe = () => {
                placeholder="Phone Number"
                name="phone"
                {...register("phone", {
-                required: "Required",
-                message: "Please enter your phone number...",
+                required: "Please enter your phone number...",
                 validate: phone => phone
               })}
              />
@@ -102,8 +100,7 @@ const ContactMe = () => {
                placeholder="Email"
                name="email"
                {...register("email", {
-                required: "Required",
-                message: "Please enter your email",
+                required: "Please enter your email...",
                 pattern: {
                   value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
                   message: "Invalid Email"
@@ -129,8 +126,7 @@ const ContactMe = () => {
                placeholder="Subject"
                name="subject"
                {...register("subject", {
-                required: "Required",
-                message: "OOPS, you forget to add the subject...",
+                required: "OOPS, you forget to add the subject...",
                 validate: subject => subject
               })}
              />
@@ -149,8 +145,7 @@ const ContactMe = () => {
              placeholder="Description"
              name="description"
              {...register("description", {
-              required: "Required",
-              message: "Please describe shortly what is regarding for...",
+              required: "Please describe shortly what it is regarding for...",
               validate: description => description
             })}
 

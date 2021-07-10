@@ -27,14 +27,11 @@ const Footer = () => {
                 url={"mailto:sorkin.anastasia@gmail.com"}
               >
                 <EmailIcon className="mx-3" size={36} />
-              </EmailShareButton>
-              
-              
-              <div
+              </EmailShareButton>      
+              <a href="https://github.com/sheymanidze?tab=repositories" target=" _blank" className="github"
                 url={"https://github.com/sheymanidze?tab=repositories"}>
                 <FaGithubSquare className="mx-3" size={36} />
-
-              </div>
+              </a>
               </div>
               <div className="col-md-auto">
                 <Link smooth={true} to="home" offset={-110} className="footer-nav">Home</Link>

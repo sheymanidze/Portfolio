@@ -275,7 +275,7 @@ input .form-control {
 .error-message {
   color: var(--primary-white);
   background: var(--primary-red);
-  text-align: left;
+  text-align: left !important;
 }
 
 .success-message {
@@ -328,6 +328,10 @@ input .form-control {
 
 .pt-3 {
   padding-top: 0 !important;
+}
+
+.github a:hover {
+ color: none !important;
 }
 
 

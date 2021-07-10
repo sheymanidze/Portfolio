@@ -321,6 +321,13 @@ input .form-control {
   border: 2px solid var(--primary-yellow);
 }
 
+.col-lg-2 {
+  margin-left: 3rem !important;
+}
+
+.pt-3 {
+  padding-top: 0 !important;
+}
 
 
 /*****Media Section*****/

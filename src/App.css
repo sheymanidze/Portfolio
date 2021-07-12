@@ -297,12 +297,12 @@ input .form-control {
   
 }
 
-.footer a {
+.footer-nav {
   text-decoration: none;
   color: var(--primary-light-grey);
 }
 
-.footer a:hover {
+.footer-nav:hover {
   text-decoration: none;
   color: var(--primary-yellow);
   cursor: pointer;
@@ -319,6 +319,7 @@ input .form-control {
 .mx-3 {
   border-radius: 5px;
   border: 2px solid var(--primary-yellow);
+  color: var(--primary-light-grey);
 }
 
 .col-lg-2 {
@@ -328,11 +329,6 @@ input .form-control {
 .pt-3 {
   padding-top: 0 !important;
 }
-
-.github a:hover {
- color: none !important;
-}
-
 
 /*****Media Section*****/
 

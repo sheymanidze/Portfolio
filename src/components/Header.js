@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from "react-scroll";
 
 //react-typed
 import Typed from "react-typed";
@@ -15,7 +16,7 @@ const Header = () => {
       backSpeed={60}
       loop
       />
-      <a href="#" className="btn-main">contact me</a>
+      <Link smooth={true} to="contactMe" offset={-110} className="btn-main" href="#">contact me</Link>
       </div>
       
     </div>

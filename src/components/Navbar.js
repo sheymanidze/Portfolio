@@ -1,7 +1,7 @@
 import React from "react";
 import logo from "../logo.png";
 import {Link} from "react-scroll";
-import resume from "../images/Resume.pdf"
+import resume from "../images/Full-Stack-Developer.pdf"
 
 //react font awesome
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";

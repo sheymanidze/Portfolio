@@ -15,7 +15,7 @@ const Footer = () => {
     <div className="footer">
       <div className="container">
         <div className="row">
-        <div class="col icons">
+        <div className="col icons">
               <LinkedinShareButton
                 url={"https://www.linkedin.com/in/sheymanidze/"}
                 quote={"FullStack Developer"}

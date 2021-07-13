@@ -7,6 +7,7 @@ import {
   LinkedinIcon
 } from "react-share";
 import { FaGithubSquare } from "react-icons/fa";
+import resume from "../images/Full-Stack-Developer.pdf"
 
 
 
@@ -43,8 +44,12 @@ const Footer = () => {
               <div className="col col-lg-2">
               <Link smooth={true} to="portfolio" offset={-110} className="footer-nav">Portfolio</Link>
                 <br />
+               
+              <Link href={resume} target="_blank" rel="noopener noreferrer" className="footer-nav">Resume</Link>
+              <br />
                 <Link smooth={true} to="contactMe" offset={-110} className="footer-nav ">Contact Me</Link>
               </div>
+              
           
 
           <div className="socialMediaBtn d-flex justify-content-end">

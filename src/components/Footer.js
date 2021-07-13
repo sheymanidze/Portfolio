@@ -44,13 +44,10 @@ const Footer = () => {
               <div className="col col-lg-2">
               <Link smooth={true} to="portfolio" offset={-110} className="footer-nav">Portfolio</Link>
                 <br />
-               
-              <Link href={resume} target="_blank" rel="noopener noreferrer" className="footer-nav">Resume</Link>
+              <a href={resume}  className="footer-nav" rel="noopener noreferrer" target="_blank" >Resume</a>
               <br />
                 <Link smooth={true} to="contactMe" offset={-110} className="footer-nav ">Contact Me</Link>
               </div>
-              
-          
 
           <div className="socialMediaBtn d-flex justify-content-end">
            <div className="col-lg-3 col-md-5 col-sm-6 pt-3 text-center">

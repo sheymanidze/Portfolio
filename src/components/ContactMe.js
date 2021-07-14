@@ -54,7 +54,7 @@ const ContactMe = () => {
                placeholder="Name"
                name="name"
                {...register("name", {
-                required:"PLease enter name...",
+                required:"Please enter name...",
                 maxLength: {
                   value: 20,
                   message: "Please enter the name with fewer than 20 characters..."

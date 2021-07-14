@@ -20,7 +20,7 @@
  # Specifics
 
    In this application several react components were used:
-   
+
   * react-scroll “for animating vertical scrolling”
   * react-hook-form for “Contact Me form”
   * @hookform/error-message for displaying error messages
@@ -49,10 +49,10 @@
 
  # Screenshots
 
-   ![]()
+   ![./src/images/profile.png](./src/images/profile.png)
 
 
  # Future Developments
 
-   * Websites will be constantly updated with new and most valuable work experienece; 
-   * Possible layout adjustment.
+   * Websites will be constantly updated with new and most valuable work experienece
+   * Possible layout adjustment

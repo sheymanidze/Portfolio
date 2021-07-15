@@ -36,7 +36,7 @@
 
    To run a project, please follow the link 
 
-   [https://git.heroku.com/portfolio-web-developer-react.git](https://git.heroku.com/portfolio-web-developer-react.git)
+   [https://anastasia-sorkin.herokuapp.com/](https://anastasia-sorkin.herokuapp.com/)
 
 
 
